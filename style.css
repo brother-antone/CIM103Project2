@@ -16,7 +16,7 @@
 
 .photoGrid{ 
   display: flex;
-  gap: 20px;
+  gap: 5px;
   justify-content: space-between;
   align-items: flex-start;
 }
@@ -25,7 +25,7 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5px;
 }
 
 .photoItem {
@@ -37,5 +37,5 @@
   max-width: 100%;
   max-height: auto;
   object-fit: contain;
-  border-radius: 5px;
+  /* border-radius: 5px; */
 }
