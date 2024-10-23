@@ -18,6 +18,7 @@
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .column {
@@ -28,17 +29,13 @@
 }
 
 .photoItem {
-  width: auto;
-  height: auto;
-  max-height: 300px;
-  object-fit: cover;
-  border-radius: 5px;
+  width: 100%
 
 }
 
 .photoItem img {
   max-width: 100%;
-  max-height: 300px;
+  max-height: auto;
   object-fit: contain;
   border-radius: 5px;
 }
