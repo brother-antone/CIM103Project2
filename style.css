@@ -1,6 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
 *{
   padding: 0;
   margin: 0;
+}
+
+body {
+  background-color: black;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 0px;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  padding: 0px;
+  z-index: 1000;
+}
+
+.brand {
+  font-family: "Audiowide", sans-serif;
+  font-size: 28px;
+  color: white; 
+  margin-left: 50px;
 }
 
 .container {
@@ -14,18 +40,36 @@
   margin-bottom: 2rem;
 }
 
-.photoGrid{ 
-  display: flex;
+.photoGrid {
+  display: grid;
   gap: 5px;
-  justify-content: space-between;
-  align-items: flex-start;
+  grid-template-columns: repeat(4, 1fr);
 }
+
+@media (max-width: 1200px) {
+  .photoGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 900px) {
+  .photoGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .photoGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
 
 .column {
   flex: 1;
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 3px;
 }
 
 .photoItem {
@@ -37,5 +81,4 @@
   max-width: 100%;
   max-height: auto;
   object-fit: contain;
-  /* border-radius: 5px; */
 }
