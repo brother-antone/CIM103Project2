@@ -1,8 +1,44 @@
-h1 {
-  color:aliceblue;
+*{
+  padding: 0;
+  margin: 0;
 }
 
-.banner {
-  background-color: black;
-  opacity: 20;
+.container {
+  max-width: 800px;
+  width: 90%;
+  margin: auto;
+  padding: 40px 0;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.photoGrid{ 
+  display: flex;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.photoItem {
+  width: auto;
+  height: auto;
+  max-height: 300px;
+  object-fit: cover;
+  border-radius: 5px;
+
+}
+
+.photoItem img {
+  max-width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+  border-radius: 5px;
 }
